@@ -1,5 +1,6 @@
 /** JS */
-const isPlayed = Boolean(localStorage.getItem("is-played"));
+const isPlayedKey = "is-played";
+const isPlayed = Boolean(localStorage.getItem(isPlayedKey));
 
 window.addEventListener("load", () => {
   const video = document.querySelector("video");
@@ -18,5 +19,5 @@ function playVideo(btnPlay, video) {
 
   video.play();
   btnPlay.disabled = true;
-  localStorage.setItem("is-played", true);
+  localStorage.setItem(isPlayedKey, true);
 }
