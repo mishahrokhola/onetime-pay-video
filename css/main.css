@@ -1,3 +1,12 @@
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .page {
   margin-top: 30px;
 }
