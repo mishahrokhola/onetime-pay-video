@@ -10,6 +10,8 @@ window.addEventListener("load", () => {
     btnPlay.disabled = true;
   }
 
+  document.addEventListener("contextmenu", event => event.preventDefault());
+
   btnPlay.addEventListener("click", () => {
     if (isPlayed) {
       return;
