@@ -1,5 +1,5 @@
 /** JS */
-const isPlayedKey = "is-played";
+const isPlayedKey = "is-played-2";
 const isPlayed = Boolean(localStorage.getItem(isPlayedKey));
 
 window.addEventListener("load", () => {
