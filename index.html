@@ -3,10 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <title>One play video test</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
+    <div class="page">
+      <div class="container">
+        <video>
+          <source src="video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-  <script src="js/index.js"></script>
+        <button type="button" class="btn btn-primary btn-play">Play</button>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
